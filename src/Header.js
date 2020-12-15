@@ -5,10 +5,17 @@ import Checkout from "./Checkout";
 
 function Header(props) {
     return (
-        <div className="header">
-            <Logo />
-            <Menu />
-            <Checkout />
+        <div>
+            <div className="logo">
+                <Logo />
+            </div>
+            <div className="menu">
+                <Menu />
+            </div>
+            <div className="checkout">
+                <Checkout />
+            </div>
+
         </div>
     );
 }

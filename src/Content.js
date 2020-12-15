@@ -3,8 +3,10 @@ import Card from "./Card";
 
 function Content(props) {
     return (
-        <div className="content">
-          <Card />
+        <div>
+          <div className="card">
+              <Card />
+          </div>
         </div>
     );
 }
