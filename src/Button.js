@@ -2,9 +2,9 @@ import React from 'react';
 
 function Button() {
     return (
-        <div>
-            <button>
-
+        <div className="card-button">
+            <button className="btn">
+              Добавить в корзину
             </button>
         </div>
     );

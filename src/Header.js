@@ -9,6 +9,7 @@ function Header() {
             <Logo/>
             <Menu />
             <Checkout />
+            <a className="logout" href="#">выход</a>
         </div>
     );
 }
