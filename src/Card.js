@@ -3,7 +3,7 @@ import Button from "./Button";
 function Card(props) {
     return (
         <div>
-            <div className="card-button">
+            <div>
                 <Button />
             </div>
         </div>

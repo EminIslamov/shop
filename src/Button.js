@@ -1,9 +1,9 @@
 import React from 'react';
 
-function Button(props) {
+function Button() {
     return (
         <div>
-            <button className="btn">
+            <button>
 
             </button>
         </div>
