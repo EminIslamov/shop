@@ -3,12 +3,12 @@ import Logo from "./Logo/Logo";
 import Menu from "./Menu";
 import Checkout from "./Checkout/Checkout";
 
-function Header() {
+function Header(props) {
     return (
         <div className="header">
             <Logo/>
             <Menu />
-            <Checkout />
+            <Checkout dataBase={props.dataBase} setDataBase={props.setDataBase} />
             <a className="logout" href="#">выход</a>
         </div>
     );
