@@ -12,7 +12,7 @@ function Card(props) {
                 <div className="card-price">{props.product.price} ₽</div>
                 <Button
                     setBought={props.setBought}
-                    dataBase={props.dataBase}
+                    product={props.product}
                     id={props.product.id}
                     bought={props.product.bought}
                 />

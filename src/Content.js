@@ -5,10 +5,9 @@ function Content(props) {
 
     return (
         <div className="content">
-            {props.dataBase.map((stuff) => {
+            {props.product.map((stuff) => {
             return <Card
                 product={stuff}
-                dataBase={props.dataBase}
                 setBought={props.setBought}
                 />
             }
