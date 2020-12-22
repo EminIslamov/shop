@@ -1,12 +1,16 @@
 import React from 'react';
 import Card from "./Card";
 
-function Content(dataBase) {
+function Content(props) {
 
     return (
         <div className="content">
-            {dataBase.dataBase.map((stuff) => {
-            return <Card product={stuff} dataBase={dataBase}/>
+            {props.dataBase.map((stuff) => {
+            return <Card
+                product={stuff}
+                dataBase={props.dataBase}
+                setBought={props.setBought}
+                />
             }
             )
             }

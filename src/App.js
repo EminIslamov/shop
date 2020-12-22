@@ -33,7 +33,7 @@ function App() {
             id: 4,
             name: "Монитор Samsung",
             price: 12000,
-            bought: false,
+            bought: true,
             rating: "***",
             image: "http://intocode.ru/d/react-project-1/images/4.jpg"
         },
@@ -41,7 +41,7 @@ function App() {
             id: 5,
             name: "Респераторная маска",
             price: 500,
-            bought: false,
+            bought: true,
             rating: "*****",
             image: "http://intocode.ru/d/react-project-1/images/5.jpg"
         },
@@ -49,7 +49,7 @@ function App() {
             id: 6,
             name: "Стиральная машина",
             price: 100000,
-            bought: false,
+            bought: true,
             rating: "***",
             image: "http://intocode.ru/d/react-project-1/images/6.jpg"
         },
@@ -57,7 +57,7 @@ function App() {
             id: 7,
             name: "Белый холодильник",
             price: 43100,
-            bought: false,
+            bought: true,
             rating: "*****",
             image: "http://intocode.ru/d/react-project-1/images/7.jpg"
         },
@@ -78,10 +78,29 @@ function App() {
             image: "http://intocode.ru/d/react-project-1/images/9.jpg"
         }
 ]);
+
+    const setBought = (id) => {
+        setDataBase
+        (dataBase.map((item) => {
+                if (item.id === id) {
+                    return{
+                        ...item,
+                        bought: !item.bought
+                    }
+                }
+                return item;
+            })
+
+        )
+    }
+
     return (
     <div className="app">
-        <Header dataBase={dataBase} setDataBase={setDataBase} />
-        <Content dataBase={dataBase} setDataBase={setDataBase}/>
+        <Header dataBase={dataBase} />
+        <Content
+                 dataBase={dataBase}
+                 setBought={setBought}
+                 />
     </div>
   );
 }

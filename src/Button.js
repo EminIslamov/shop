@@ -1,10 +1,10 @@
 import React from 'react';
 
-function Button(dataBase) {
+function Button(props) {
 
     return (
         <div className="card-button">
-            <button className="btn">
+            <button onClick={() => props.setBought(props.id)} className="btn">
               Добавить в корзину
             </button>
         </div>

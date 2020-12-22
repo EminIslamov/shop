@@ -2,10 +2,10 @@ import React from 'react';
 import checkoutLogo from "./shopping-cart-solid.svg"
 function Checkout(props) {
 const filtered = props.dataBase.filter((item) => {
-    if (item.bought === true){
-        return true;
-    }
-    return false;
+ if (item.bought === true){
+     return true;
+ }
+ return false;
 
 });
 
