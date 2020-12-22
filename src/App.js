@@ -85,7 +85,7 @@ function App() {
                 if (item.id === id) {
                     return{
                         ...item,
-                        bought: !item.bought
+                        bought: true
                     }
                 }
                 return item;
