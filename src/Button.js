@@ -4,9 +4,8 @@ function Button(props) {
 
     return (
         <div className="card-button">
-            <button onClick={() => props.setBought(props.id)} className="btn">
-
-              Добавить в корзину
+            <button onClick={() => props.setBought(props.id)} className="btn" disabled={props.bought}>
+                    {props.bought? "Добавлено в корзину": "Добавить в корзину"}
             </button>
         </div>
     );
